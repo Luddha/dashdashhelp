@@ -2164,6 +2164,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
+		margin-top: 375px;
 		margin-left: 375px;
 		text-align: center;
 		background-color: #dce3e2;
@@ -2240,17 +2241,6 @@ input, select, textarea {
 				background-image: url("../../images/banner.jpg");
 			}
 
-			#main > section.two {
-				background-color: #f5fafa;
-			}
-
-			#main > section.three {
-				background-color: #ecf1f1;
-			}
-
-			#main > section.four {
-				background-color: #e8edec;
-			}
 
 /* Wide */
 
