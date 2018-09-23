@@ -175,7 +175,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #E27689;
+			/*color: #E27689; */
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 
@@ -214,6 +214,7 @@ input, select, textarea {
 
 	.container {
 		margin: 0 auto;
+		margin-bottom: 100px;
 		max-width: 100%;
 		width: 1400px;
 	}
@@ -1734,8 +1735,7 @@ input, select, textarea {
 
 		section > :last-child,
 		section > .container, section:last-child, article > :last-child,
-		article > .container, article:last-child {
-			margin-bottom: 0;
+		article > .container, article:last-child { margin-bottom: 0;
 		}
 
 		.row > section, .row > article {
@@ -2164,7 +2164,8 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		margin-top: 375px;
+		/*margin-top: 375px; */
+		margin-top: 600px;
 		margin-left: 375px;
 		text-align: center;
 		background-color: #dce3e2;
@@ -2602,3 +2603,24 @@ input, select, textarea {
 				}
 
 	}
+
+div .repo {
+	text-align: -webkit-match-parent;
+	box-sizing: border-box;
+	border: 1px #e1e4e8 solid!important;
+	border-color: #d1d5da!important;
+	border-radius: 3px!important;
+	margin-bottom: 16px!important;
+	padding: 16px!important;
+	display: flex;
+	width: 359px;
+	list-style: none;
+	margin: 20px;
+	float: left;
+
+}
+
+.repo:hover {
+	background-color:rgb(180, 174, 174);
+	color: rgb(0, 0, 0);
+}

@@ -6,6 +6,13 @@
 
 {% block content %}
 
-<h2>Coming Soon</h2>
+<h2>A Few Projects</h2>
+<p></p>
+<ul>
+    {% for j in json %}
+    <div class="repo"><a href="{{ j.html_url }}" ><li>{{ j.name }} <br/> <span style="font-size: 12px">{{ j.description }}</span></li></a></div>
+    {% endfor %}
+</ul>
+
 
 {% endblock %}
