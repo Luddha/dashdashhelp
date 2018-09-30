@@ -53,6 +53,10 @@
 			})
 			.each(function() {
 
+				// prevent nav link from breaking mobile interface
+				if ($(this).attr('href').charAt(0) != '#')
+					return;
+
 				var	$this = $(this),
 					id = $this.attr('href'),
 					$section = $(id);
