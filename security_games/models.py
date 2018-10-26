@@ -2,11 +2,18 @@ from django.db import models
 
 # Create your models here.
 class WG_VMS(models.Model):
+    wg_vm_name = models.CharField(max_length=50)
+    wg_vm_file = models.FileField()
+
+class WG_DOCS(models.Model):
+    wg_doc_title = models.CharField(max_length=50)
+    wg_doc_body  = models.TextField()
+    wg_doc_time  = models.TimeField()
 
 
 
-class Wargames(models.Models):
-    wg_name        = models.CharField(max_length=50)
+class Wargames(models.Model):
+    wg_name     = models.CharField(max_length=50)
     wg_file     = models.ForeignKey(WG_VMS, on_delete=models.CASCADE)
     NOT_STARTED = "NS"
     STARTED     = "ST"
@@ -19,4 +26,5 @@ class Wargames(models.Models):
         (DONE,        "Done"       )
     )
     wg_status = models.CharField(max_length=2, choices=wg_options, default=NOT_STARTED)
-    wg_docs = models.ForeignKey(WG_WRITE_UP, on_delete=models.CASCADE)
+    wg_doc = models.ForeignKey(WG_DOCS, on_delete=models.CASCADE)
+
