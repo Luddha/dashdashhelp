@@ -15,7 +15,7 @@ class WG_DOCS(models.Model):
 
 class Wargames(models.Model):
     wg_name     = models.CharField(max_length=50)
-    wg_file     = models.ForeignKey(WG_VMS, on_delete=models.CASCADE, default=0)
+    wg_file     = models.ForeignKey(WG_VMS, on_delete=models.CASCADE, blank=True, null=True)
     NOT_STARTED = "NS"
     STARTED     = "ST"
     PAUSED      = "PA"
@@ -27,5 +27,5 @@ class Wargames(models.Model):
         (DONE,        "Done"       )
     )
     wg_status = models.CharField(max_length=2, choices=wg_options, default=NOT_STARTED)
-    wg_doc = models.ForeignKey(WG_DOCS, on_delete=models.CASCADE, default=0, null=False)
+    wg_doc = models.ForeignKey(WG_DOCS, on_delete=models.CASCADE, blank=True, null=True)
 
