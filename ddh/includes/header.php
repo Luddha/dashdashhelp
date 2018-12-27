@@ -1,16 +1,19 @@
 <!-- linking -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
-
+<link rel="stylesheet" href="css/ddh.css">
 
 <!-- banner image -->
-<img src="./img/train.jpg" class="img-fluid" alt="Responsive image" style="width:100%; height:200px">
+<img class="ddh_banner" src="./img/anime_lurk02.jpg" class="img-fluid" alt="Responsive image"> 
+
 
 <!-- navbar -->
+<span class="ddh_navbar">
 <nav class="navbar navbar-dark bg-dark">
     <span class="navbar-text">
-        <a href="#">home</a> &nbsp;
-        <a href="#">pics</a> &nbsp;
-        <a href="#">projects</a> &nbsp;
-        <a href="#">writeups</a> &nbsp;
+        <a href="./index.php">home</a> 
+        <a href="./pics.php">pics</a> 
+        <a href="#">projects</a> 
+        <a href="#">writeups</a> 
     </span>
 </nav>
+</span>

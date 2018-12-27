@@ -1,0 +1,15 @@
+.ddh_banner {
+    width:100%;
+    height:200px;
+}
+
+
+.ddh_navbar a {
+    padding-right:20px;
+}
+
+.ddh_imgs img {
+    width:200px;
+    height:200px;
+    padding: 5px;
+}
