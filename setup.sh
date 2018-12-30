@@ -21,9 +21,3 @@ cp ./ddh.conf $APACHE_CONF/ddh.conf
 
 echo "[linking file to web root]"
 ln -s $(pwd)/ddh $WEBROOT/ddh
-
-echo "[enabling site]"
-a2dissite 000-default.conf
-a2ensite ddh
-service apache2 stop
-service apache2 start
