@@ -1,3 +1,3 @@
 sonar_scan:
   script:
-    - /opt/sonar-scanner/bin/sonar-scanner -Dsonar.projectKey=DDH -Dsonar.sources=. -Dsonar.exclusions=dashdashhelp/ddh/css/**,dashdashhelp/ddh/js/** -Dsonar.host.url=http://10.64.0.5:9000/ -Dsonar.login=$SONAR_TOKEN
+    - /opt/sonar-scanner/bin/sonar-scanner -Dsonar.projectKey=DDH -Dsonar.sources=. -Dsonar.exclusions=ddh/css/**,ddh/js/** -Dsonar.host.url=http://10.64.0.5:9000/ -Dsonar.login=$SONAR_TOKEN
